@@ -72,5 +72,18 @@
     "installCommand": "gemini extensions install doc-gen",
     "author": "DocMaster",
     "version": "3.0.1"
+  },
+  {
+    "id": "7",
+    "name": "API Client Generator",
+    "description": "Generate type-safe API clients from OpenAPI/Swagger specifications for multiple languages.",
+    "tags": [
+      "API",
+      "Code Generation",
+      "TypeScript"
+    ],
+    "installCommand": "gemini extensions install api-client-gen",
+    "author": "TestContributor",
+    "version": "1.2.3"
   }
 ]
