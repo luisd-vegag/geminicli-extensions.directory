@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate": "tsx scripts/validate-extensions.ts"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.17",
@@ -26,6 +27,7 @@
     "eslint-config-next": "16.0.3",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.17",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }
