@@ -21,4 +21,4 @@ jobs:
         run: npm ci
 
       - name: Run validation script
-        run: npx ts-node scripts/validate-extensions.ts
+        run: npm run validate
