@@ -1,66 +1,58 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useState } from "react";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import ExtensionCard from "@/components/ExtensionCard";
+import extensionsData from "@/data/extensions.json";
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredExtensions = extensionsData.filter((ext) =>
+    ext.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    ext.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    ext.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+  );
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+
+      <main className="flex-grow">
+        <Hero onSearch={setSearchQuery} />
+
+        <section className="container pb-20">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-xl font-semibold">
+              All Extensions
+              <span className="ml-2 text-[var(--secondary)] text-sm font-normal">
+                ({filteredExtensions.length})
+              </span>
+            </h2>
+
+            {/* Filter dropdowns could go here */}
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredExtensions.map((ext) => (
+              <ExtensionCard key={ext.id} extension={ext} />
+            ))}
+          </div>
+
+          {filteredExtensions.length === 0 && (
+            <div className="text-center py-20 text-[var(--secondary)]">
+              <p>No extensions found matching "{searchQuery}"</p>
+            </div>
+          )}
+        </section>
       </main>
+
+      <footer className="border-t border-[var(--card-border)] py-8 mt-auto">
+        <div className="container text-center text-sm text-[var(--secondary)]">
+          <p>© {new Date().getFullYear()} Gemini CLI Extensions Directory. Not affiliated with Google.</p>
+        </div>
+      </footer>
     </div>
   );
 }

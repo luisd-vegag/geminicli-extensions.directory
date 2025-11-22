@@ -1,0 +1,76 @@
+[
+  {
+    "id": "1",
+    "name": "Gemini Git Commit",
+    "description": "Automatically generate conventional commit messages from your staged changes using Gemini.",
+    "tags": [
+      "Productivity",
+      "Git",
+      "CLI"
+    ],
+    "installCommand": "gemini extensions install git-commit",
+    "author": "Google",
+    "version": "1.0.2"
+  },
+  {
+    "id": "2",
+    "name": "Code Reviewer",
+    "description": "Get instant code review feedback on your current branch compared to main.",
+    "tags": [
+      "Code Quality",
+      "Review"
+    ],
+    "installCommand": "gemini extensions install code-reviewer",
+    "author": "Community",
+    "version": "0.5.0"
+  },
+  {
+    "id": "3",
+    "name": "SQL Generator",
+    "description": "Translate natural language queries into complex SQL statements for various dialects.",
+    "tags": [
+      "Database",
+      "SQL",
+      "Helper"
+    ],
+    "installCommand": "gemini extensions install sql-gen",
+    "author": "DataWiz",
+    "version": "2.1.0"
+  },
+  {
+    "id": "4",
+    "name": "Regex Explainer",
+    "description": "Explain complex regex patterns in plain English or generate them from descriptions.",
+    "tags": [
+      "Regex",
+      "Utility"
+    ],
+    "installCommand": "gemini extensions install regex-help",
+    "author": "RegExpert",
+    "version": "1.1.5"
+  },
+  {
+    "id": "5",
+    "name": "Unit Test Writer",
+    "description": "Generate unit tests for the selected function or file in your preferred framework.",
+    "tags": [
+      "Testing",
+      "Automation"
+    ],
+    "installCommand": "gemini extensions install test-writer",
+    "author": "TestBot",
+    "version": "1.0.0"
+  },
+  {
+    "id": "6",
+    "name": "Documentation Generator",
+    "description": "Create comprehensive documentation for your codebase automatically.",
+    "tags": [
+      "Documentation",
+      "Docs"
+    ],
+    "installCommand": "gemini extensions install doc-gen",
+    "author": "DocMaster",
+    "version": "3.0.1"
+  }
+]
