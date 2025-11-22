@@ -7,6 +7,9 @@ const extensionSchema = z.object({
     id: z.string(),
     name: z.string().min(3, "Name must be at least 3 characters"),
     description: z.string().min(10, "Description must be at least 10 characters"),
+    category: z.enum(["Productivity", "Code Quality", "Database", "Development Tools", "Testing", "Documentation"], {
+        errorMap: () => ({ message: "Category must be one of: Productivity, Code Quality, Database, Development Tools, Testing, Documentation" })
+    }),
     tags: z.array(z.string()).min(1, "At least one tag is required"),
     installCommand: z.string().regex(/^gemini extensions install .+$/, "Install command must start with 'gemini extensions install '"),
     author: z.string().min(1, "Author is required"),

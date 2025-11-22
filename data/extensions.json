@@ -3,6 +3,7 @@
     "id": "1",
     "name": "Gemini Git Commit",
     "description": "Automatically generate conventional commit messages from your staged changes using Gemini.",
+    "category": "Productivity",
     "tags": [
       "Productivity",
       "Git",
@@ -17,6 +18,7 @@
     "id": "2",
     "name": "Code Reviewer",
     "description": "Get instant code review feedback on your current branch compared to main.",
+    "category": "Code Quality",
     "tags": [
       "Code Quality",
       "Review"
@@ -30,6 +32,7 @@
     "id": "3",
     "name": "SQL Generator",
     "description": "Translate natural language queries into complex SQL statements for various dialects.",
+    "category": "Database",
     "tags": [
       "Database",
       "SQL",
@@ -44,6 +47,7 @@
     "id": "4",
     "name": "Regex Explainer",
     "description": "Explain complex regex patterns in plain English or generate them from descriptions.",
+    "category": "Development Tools",
     "tags": [
       "Regex",
       "Utility"
@@ -57,6 +61,7 @@
     "id": "5",
     "name": "Unit Test Writer",
     "description": "Generate unit tests for the selected function or file in your preferred framework.",
+    "category": "Testing",
     "tags": [
       "Testing",
       "Automation"
@@ -70,6 +75,7 @@
     "id": "6",
     "name": "Documentation Generator",
     "description": "Create comprehensive documentation for your codebase automatically.",
+    "category": "Documentation",
     "tags": [
       "Documentation",
       "Docs"
@@ -83,6 +89,7 @@
     "id": "7",
     "name": "API Client Generator",
     "description": "Generate type-safe API clients from OpenAPI/Swagger specifications for multiple languages.",
+    "category": "Development Tools",
     "tags": [
       "API",
       "Code Generation",
