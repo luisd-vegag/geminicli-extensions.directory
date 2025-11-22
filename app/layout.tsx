@@ -18,6 +18,8 @@ export const metadata: Metadata = {
   description: "Discover and share extensions for the Gemini CLI.",
 };
 
+import { AuthProvider } from "@/context/AuthContext";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,9 +30,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <GoogleAnalytics gaId="G-XXXXXXXXXX" />
-        {children}
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+        {/* <GoogleAnalytics gaId="G-XXXXXXXXXX" /> */}
       </body>
     </html>
   );
 }
+
