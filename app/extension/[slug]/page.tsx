@@ -43,10 +43,18 @@ async function getReadme(repository: string): Promise<string> {
     }
 }
 
-export default async function ExtensionDetailPage({ params }: { params: { slug: string } }) {
-    const extension = extensions.find((ext: Extension) => ext.slug === params.slug);
+export default async function ExtensionDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+
+    console.log('Received slug:', slug);
+    console.log('Available extensions:', extensions.map(ext => ({ id: ext.id, slug: ext.slug })));
+
+    const extension = extensions.find((ext: Extension) => ext.slug === slug);
+
+    console.log('Found extension:', extension);
 
     if (!extension) {
+        console.log('Extension not found, calling notFound()');
         notFound();
     }
 

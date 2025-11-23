@@ -1,0 +1,156 @@
+
+> geminicli-extensions.directory@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use by process 24594, using available port 3001 instead.
+   ▲ Next.js 16.0.3 (Turbopack)
+   - Local:         http://localhost:3001
+   - Network:       http://192.168.2.40:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 747ms
+ GET / 200 in 1683ms (compile: 1600ms, render: 83ms)
+Error: Route "/extension/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ExtensionDetailPage (app/extension/[slug]/page.tsx:47:42)
+  45 |
+  46 | export default async function ExtensionDetailPage({ params }: { params: { slug: string } }) {
+> 47 |     console.log('Received slug:', params.slug);
+     |                                          ^
+  48 |     console.log('Available extensions:', extensions.map(ext => ({ id: ext.id, slug: ext.slug })));
+  49 |
+  50 |     const extension = extensions.find((ext: Extension) => ext.slug === params.slug);
+Received slug: undefined
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Error: Route "/extension/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at <unknown> (app/extension/[slug]/page.tsx:50:79)
+    at Array.find (<anonymous>)
+    at ExtensionDetailPage (app/extension/[slug]/page.tsx:50:34)
+  48 |     console.log('Available extensions:', extensions.map(ext => ({ id: ext.id, slug: ext.slug })));
+  49 |
+> 50 |     const extension = extensions.find((ext: Extension) => ext.slug === params.slug);
+     |                                                                               ^
+  51 |
+  52 |     console.log('Found extension:', extension);
+  53 |
+Found extension: undefined
+Extension not found, calling notFound()
+ GET /extension/gemini-git-commit 200 in 1054ms (compile: 989ms, render: 66ms)
+Error: Route "/extension/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at ExtensionDetailPage (app/extension/[slug]/page.tsx:47:42)
+  45 |
+  46 | export default async function ExtensionDetailPage({ params }: { params: { slug: string } }) {
+> 47 |     console.log('Received slug:', params.slug);
+     |                                          ^
+  48 |     console.log('Available extensions:', extensions.map(ext => ({ id: ext.id, slug: ext.slug })));
+  49 |
+  50 |     const extension = extensions.find((ext: Extension) => ext.slug === params.slug);
+Received slug: undefined
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Error: Route "/extension/[slug]" used `params.slug`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+    at <unknown> (app/extension/[slug]/page.tsx:50:79)
+    at Array.find (<anonymous>)
+    at ExtensionDetailPage (app/extension/[slug]/page.tsx:50:34)
+  48 |     console.log('Available extensions:', extensions.map(ext => ({ id: ext.id, slug: ext.slug })));
+  49 |
+> 50 |     const extension = extensions.find((ext: Extension) => ext.slug === params.slug);
+     |                                                                               ^
+  51 |
+  52 |     console.log('Found extension:', extension);
+  53 |
+Found extension: undefined
+Extension not found, calling notFound()
+ GET /extension/gemini-git-commit 404 in 133ms (compile: 14ms, render: 119ms)
+ ✓ Compiled in 158ms
+ ⨯ Error: The default export is not a React Component in "/extension/[slug]/page"
+    at ignore-listed frames
+ ⨯ Error: The default export is not a React Component in "/extension/[slug]/page"
+    at ignore-listed frames {
+  page: '/extension/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 500 in 1336ms (compile: 1269ms, render: 67ms)
+ ⨯ Error: The default export is not a React Component in "/extension/[slug]/page"
+    at ignore-listed frames
+ ⨯ Error: The default export is not a React Component in "/extension/[slug]/page"
+    at ignore-listed frames {
+  page: '/extension/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 500 in 352ms (compile: 345ms, render: 7ms)
+ ✓ Compiled in 156ms
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '2566597472'
+}
+ GET /extension/gemini-git-commit 500 in 605ms (compile: 153ms, render: 452ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '2566597472'
+}
+ GET /extension/gemini-git-commit 500 in 482ms (compile: 7ms, render: 475ms)
+ GET / 200 in 78ms (compile: 10ms, render: 68ms)
