@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 interface Extension {
     id: string;
+    slug: string;
     name: string;
     description: string;
     tags: string[];
@@ -26,7 +27,7 @@ export default function ExtensionCard({ extension }: { extension: Extension }) {
 
     return (
         <Link
-            href={`/extension/${extension.id}`}
+            href={`/extension/${extension.slug}`}
             className="block group"
         >
             <div className="flex flex-col h-full overflow-hidden rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-200">

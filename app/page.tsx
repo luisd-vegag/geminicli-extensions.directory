@@ -9,6 +9,7 @@ import extensionsData from "@/data/extensions.json";
 
 interface Extension {
   id: string;
+  slug: string;
   name: string;
   description: string;
   category: string;

@@ -5,6 +5,7 @@ import path from 'path';
 
 const extensionSchema = z.object({
     id: z.string(),
+    slug: z.string().regex(/^[a-z0-9-]+$/, "Slug must be lowercase alphanumeric with dashes"),
     name: z.string().min(3, "Name must be at least 3 characters"),
     description: z.string().min(10, "Description must be at least 10 characters"),
     category: z.enum(["Productivity", "Code Quality", "Database", "Development Tools", "Testing", "Documentation"], {

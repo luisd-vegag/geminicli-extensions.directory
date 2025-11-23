@@ -5,9 +5,10 @@ import extensions from '@/data/extensions.json';
 import { notFound } from 'next/navigation';
 
 interface Extension {
-    id: string;
+    slug: string;
     name: string;
     description: string;
+    category: string;
     tags: string[];
     installCommand: string;
     author: string;
@@ -45,12 +46,12 @@ async function getReadme(repository: string): Promise<string> {
 // Generate static params for all extensions at build time
 export async function generateStaticParams() {
     return extensions.map((ext: Extension) => ({
-        id: ext.id,
+        slug: ext.slug,
     }));
 }
 
-export default async function ExtensionDetailPage({ params }: { params: { id: string } }) {
-    const extension = extensions.find((ext: Extension) => ext.id === params.id);
+export default async function ExtensionDetailPage({ params }: { params: { slug: string } }) {
+    const extension = extensions.find((ext: Extension) => ext.slug === params.slug);
 
     if (!extension) {
         notFound();

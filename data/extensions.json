@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "slug": "gemini-git-commit",
     "name": "Gemini Git Commit",
     "description": "Automatically generate conventional commit messages from your staged changes using Gemini.",
     "category": "Productivity",
@@ -16,6 +17,7 @@
   },
   {
     "id": "2",
+    "slug": "code-reviewer",
     "name": "Code Reviewer",
     "description": "Get instant code review feedback on your current branch compared to main.",
     "category": "Code Quality",
@@ -30,6 +32,7 @@
   },
   {
     "id": "3",
+    "slug": "sql-generator",
     "name": "SQL Generator",
     "description": "Translate natural language queries into complex SQL statements for various dialects.",
     "category": "Database",
@@ -45,6 +48,7 @@
   },
   {
     "id": "4",
+    "slug": "regex-explainer",
     "name": "Regex Explainer",
     "description": "Explain complex regex patterns in plain English or generate them from descriptions.",
     "category": "Development Tools",
@@ -59,6 +63,7 @@
   },
   {
     "id": "5",
+    "slug": "unit-test-writer",
     "name": "Unit Test Writer",
     "description": "Generate unit tests for the selected function or file in your preferred framework.",
     "category": "Testing",
@@ -73,6 +78,7 @@
   },
   {
     "id": "6",
+    "slug": "doc-generator",
     "name": "Documentation Generator",
     "description": "Create comprehensive documentation for your codebase automatically.",
     "category": "Documentation",
@@ -87,6 +93,7 @@
   },
   {
     "id": "7",
+    "slug": "api-client-gen",
     "name": "API Client Generator",
     "description": "Generate type-safe API clients from OpenAPI/Swagger specifications for multiple languages.",
     "category": "Development Tools",
