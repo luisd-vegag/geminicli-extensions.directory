@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import extensions from '@/data/extensions.json';
 import { notFound } from 'next/navigation';
+import CopyButton from '@/components/CopyButton';
 
 interface Extension {
     slug: string;
@@ -116,12 +117,7 @@ export default async function ExtensionDetailPage({ params }: { params: Promise<
                         <label className="text-sm font-medium mb-2 block">Installation</label>
                         <div className="flex items-center justify-between rounded-md bg-muted px-4 py-3 text-sm font-mono">
                             <code className="text-foreground">{extension.installCommand}</code>
-                            <button
-                                onClick={() => navigator.clipboard.writeText(extension.installCommand)}
-                                className="ml-4 px-3 py-1 text-xs rounded-md bg-primary/10 hover:bg-primary/20 transition-colors"
-                            >
-                                Copy
-                            </button>
+                            <CopyButton text={extension.installCommand} />
                         </div>
                     </div>
                 </div>

@@ -154,3 +154,187 @@ If you need interactivity, consider converting part of this to a Client Componen
 }
  GET /extension/gemini-git-commit 500 in 482ms (compile: 7ms, render: 475ms)
  GET / 200 in 78ms (compile: 10ms, render: 68ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '2566597472'
+}
+ GET /extension/gemini-git-commit 200 in 470ms (compile: 14ms, render: 457ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '2566597472'
+}
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ ⨯ Error: Event handlers cannot be passed to Client Component props.
+  <button onClick={function onClick} className=... children=...>
+                  ^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>) {
+  digest: '2566597472'
+}
+ GET /extension/gemini-git-commit 500 in 1342ms (compile: 330ms, render: 1011ms)
+ GET /extension/gemini-git-commit 500 in 296ms (compile: 8ms, render: 289ms)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 608ms (compile: 106ms, render: 502ms)
+ GET /extension/gemini-git-commit 200 in 280ms (compile: 8ms, render: 272ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 63ms (compile: 5ms, render: 57ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 444ms (compile: 13ms, render: 431ms)
