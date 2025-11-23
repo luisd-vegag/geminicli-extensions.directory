@@ -17,30 +17,17 @@ interface Extension {
     repository: string;
 }
 
-async function getReadme(repository: string): Promise<string> {
+async function getReadme(slug: string): Promise<string> {
     try {
-        // Convert GitHub URL to raw README URL
-        const repoPath = repository.replace('https://github.com/', '');
-        const readmeUrl = `https://raw.githubusercontent.com/${repoPath}/main/README.md`;
+        const fs = await import('fs/promises');
+        const path = await import('path');
 
-        const response = await fetch(readmeUrl, { next: { revalidate: 3600 } });
-
-        if (!response.ok) {
-            // Try master branch if main doesn't exist
-            const masterUrl = `https://raw.githubusercontent.com/${repoPath}/master/README.md`;
-            const masterResponse = await fetch(masterUrl, { next: { revalidate: 3600 } });
-
-            if (!masterResponse.ok) {
-                return '# README not found\n\nThis extension does not have a README.md file in the repository.';
-            }
-
-            return await masterResponse.text();
-        }
-
-        return await response.text();
+        const readmePath = path.join(process.cwd(), 'data', 'readmes', `${slug}.md`);
+        const content = await fs.readFile(readmePath, 'utf-8');
+        return content;
     } catch (error) {
-        console.error('Error fetching README:', error);
-        return '# Error loading README\n\nCould not fetch the README file for this extension.';
+        console.error('Error reading README:', error);
+        return '# README not found\n\nThis extension does not have a README.md file yet.';
     }
 }
 
@@ -59,7 +46,7 @@ export default async function ExtensionDetailPage({ params }: { params: Promise<
         notFound();
     }
 
-    const readme = await getReadme(extension.repository);
+    const readme = await getReadme(slug);
 
     return (
         <div className="min-h-screen bg-background">
