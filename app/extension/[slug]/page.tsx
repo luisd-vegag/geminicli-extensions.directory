@@ -43,13 +43,6 @@ async function getReadme(repository: string): Promise<string> {
     }
 }
 
-// Generate static params for all extensions at build time
-export async function generateStaticParams() {
-    return extensions.map((ext: Extension) => ({
-        slug: ext.slug,
-    }));
-}
-
 export default async function ExtensionDetailPage({ params }: { params: { slug: string } }) {
     const extension = extensions.find((ext: Extension) => ext.slug === params.slug);
 
