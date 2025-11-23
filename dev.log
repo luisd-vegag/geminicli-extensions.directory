@@ -477,3 +477,217 @@ Found extension: {
   repository: 'https://github.com/community/code-reviewer'
 }
  GET /extension/code-reviewer 200 in 470ms (compile: 24ms, render: 446ms)
+Received slug: code-reviewer
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '2',
+  slug: 'code-reviewer',
+  name: 'Code Reviewer',
+  description: 'Get instant code review feedback on your current branch compared to main.',
+  category: 'Code Quality',
+  tags: [ 'Code Quality', 'Review' ],
+  installCommand: 'gemini extensions install code-reviewer',
+  author: 'Community',
+  version: '0.5.0',
+  repository: 'https://github.com/community/code-reviewer'
+}
+ GET /extension/code-reviewer 200 in 328ms (compile: 205ms, render: 123ms)
+ GET / 200 in 91ms (compile: 53ms, render: 38ms)
+ GET / 200 in 144ms (compile: 12ms, render: 132ms)
+ ✓ Compiled in 118ms
+ GET / 200 in 783ms (compile: 216ms, render: 567ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET / 200 in 1091ms (compile: 466ms, render: 625ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET / 200 in 123ms (compile: 2ms, render: 121ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET / 200 in 102ms (compile: 1983µs, render: 100ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 647ms (compile: 303ms, render: 344ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 268ms (compile: 2ms, render: 266ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 275ms (compile: 13ms, render: 261ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 179ms (compile: 6ms, render: 173ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'gemini-git-commit' },
+  { id: '2', slug: 'code-reviewer' },
+  { id: '3', slug: 'sql-generator' },
+  { id: '4', slug: 'regex-explainer' },
+  { id: '5', slug: 'unit-test-writer' },
+  { id: '6', slug: 'doc-generator' },
+  { id: '7', slug: 'api-client-gen' }
+]
+Found extension: {
+  id: '1',
+  slug: 'gemini-git-commit',
+  name: 'Gemini Git Commit',
+  description: 'Automatically generate conventional commit messages from your staged changes using Gemini.',
+  category: 'Productivity',
+  tags: [ 'Productivity', 'Git', 'CLI' ],
+  installCommand: 'gemini extensions install git-commit',
+  author: 'Google',
+  version: '1.0.2',
+  repository: 'https://github.com/google/gemini-git-commit'
+}
+ GET /extension/gemini-git-commit 200 in 226ms (compile: 2ms, render: 224ms)
+ GET /extension/gemini-git-commit 200 in 240ms (compile: 2ms, render: 237ms)
+ GET /extension/gemini-git-commit 200 in 218ms (compile: 3ms, render: 215ms)
+ GET /extension/gemini-git-commit 200 in 130ms (compile: 3ms, render: 127ms)
