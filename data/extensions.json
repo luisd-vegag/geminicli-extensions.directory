@@ -1,110 +1,82 @@
 [
   {
     "id": "1",
-    "slug": "gemini-git-commit",
-    "name": "Gemini Git Commit",
-    "description": "Automatically generate conventional commit messages from your staged changes using Gemini.",
-    "category": "Productivity",
+    "slug": "security",
+    "name": "Gemini CLI Security Extension",
+    "description": "Find security vulnerabilities in your code changes and pull requests using AI-powered analysis.",
+    "category": "Code Quality",
     "tags": [
-      "Productivity",
-      "Git",
-      "CLI"
+      "Security",
+      "Vulnerability Scanning",
+      "Code Analysis"
     ],
-    "installCommand": "gemini extensions install git-commit",
+    "installCommand": "gemini extensions install https://github.com/gemini-cli-extensions/security",
     "author": "Google",
-    "version": "1.0.2",
-    "repository": "https://github.com/google/gemini-git-commit"
+    "version": "0.1.1",
+    "repository": "https://github.com/gemini-cli-extensions/security"
   },
   {
     "id": "2",
-    "slug": "code-reviewer",
-    "name": "Code Reviewer",
-    "description": "Get instant code review feedback on your current branch compared to main.",
+    "slug": "code-review",
+    "name": "Gemini CLI Code Review Extension",
+    "description": "Analyze code changes on your current branch to identify code quality issues using AI.",
     "category": "Code Quality",
     "tags": [
-      "Code Quality",
-      "Review"
+      "Code Review",
+      "Quality Analysis",
+      "Best Practices"
     ],
-    "installCommand": "gemini extensions install code-reviewer",
-    "author": "Community",
-    "version": "0.5.0",
-    "repository": "https://github.com/community/code-reviewer"
+    "installCommand": "gemini extensions install https://github.com/gemini-cli-extensions/code-review",
+    "author": "Google",
+    "version": "0.1.0",
+    "repository": "https://github.com/gemini-cli-extensions/code-review"
   },
   {
     "id": "3",
-    "slug": "sql-generator",
-    "name": "SQL Generator",
-    "description": "Translate natural language queries into complex SQL statements for various dialects.",
-    "category": "Database",
+    "slug": "flutter",
+    "name": "Flutter Extension for Gemini CLI",
+    "description": "Create, build, test, and run Flutter apps with AI-powered assistance and best practices.",
+    "category": "Development Tools",
     "tags": [
-      "Database",
-      "SQL",
-      "Helper"
+      "Flutter",
+      "Mobile Development",
+      "Project Generation"
     ],
-    "installCommand": "gemini extensions install sql-gen",
-    "author": "DataWiz",
-    "version": "2.1.0",
-    "repository": "https://github.com/datawiz/sql-generator"
+    "installCommand": "gemini extensions install https://github.com/gemini-cli-extensions/flutter",
+    "author": "Google",
+    "version": "0.1.0",
+    "repository": "https://github.com/gemini-cli-extensions/flutter"
   },
   {
     "id": "4",
-    "slug": "regex-explainer",
-    "name": "Regex Explainer",
-    "description": "Explain complex regex patterns in plain English or generate them from descriptions.",
-    "category": "Development Tools",
+    "slug": "jules",
+    "name": "Jules Extension for Gemini CLI",
+    "description": "Delegate coding tasks like bug fixing and refactoring to the Jules asynchronous agent.",
+    "category": "Productivity",
     "tags": [
-      "Regex",
-      "Utility"
+      "Automation",
+      "Async Tasks",
+      "Code Generation"
     ],
-    "installCommand": "gemini extensions install regex-help",
-    "author": "RegExpert",
-    "version": "1.1.5",
-    "repository": "https://github.com/regexpert/regex-explainer"
+    "installCommand": "gemini extensions install https://github.com/gemini-cli-extensions/jules --auto-update",
+    "author": "Google",
+    "version": "0.1.0",
+    "repository": "https://github.com/gemini-cli-extensions/jules"
   },
   {
     "id": "5",
-    "slug": "unit-test-writer",
-    "name": "Unit Test Writer",
-    "description": "Generate unit tests for the selected function or file in your preferred framework.",
-    "category": "Testing",
-    "tags": [
-      "Testing",
-      "Automation"
-    ],
-    "installCommand": "gemini extensions install test-writer",
-    "author": "TestBot",
-    "version": "1.0.0",
-    "repository": "https://github.com/testbot/unit-test-writer"
-  },
-  {
-    "id": "6",
-    "slug": "doc-generator",
-    "name": "Documentation Generator",
-    "description": "Create comprehensive documentation for your codebase automatically.",
-    "category": "Documentation",
-    "tags": [
-      "Documentation",
-      "Docs"
-    ],
-    "installCommand": "gemini extensions install doc-gen",
-    "author": "DocMaster",
-    "version": "3.0.1",
-    "repository": "https://github.com/docmaster/doc-generator"
-  },
-  {
-    "id": "7",
-    "slug": "api-client-gen",
-    "name": "API Client Generator",
-    "description": "Generate type-safe API clients from OpenAPI/Swagger specifications for multiple languages.",
+    "slug": "nanobanana",
+    "name": "Nano Banana - Image Generation Extension",
+    "description": "Generate and manipulate images using Gemini's image models directly from the CLI.",
     "category": "Development Tools",
     "tags": [
-      "API",
-      "Code Generation",
-      "TypeScript"
+      "Image Generation",
+      "AI Art",
+      "Visual Tools"
     ],
-    "installCommand": "gemini extensions install api-client-gen",
-    "author": "TestContributor",
-    "version": "1.2.3",
-    "repository": "https://github.com/testcontributor/api-client-gen"
+    "installCommand": "gemini extensions install https://github.com/gemini-cli-extensions/nanobanana",
+    "author": "Google",
+    "version": "0.1.0",
+    "repository": "https://github.com/gemini-cli-extensions/nanobanana"
   }
 ]

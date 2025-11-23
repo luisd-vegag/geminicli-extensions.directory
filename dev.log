@@ -691,3 +691,54 @@ Found extension: {
  GET /extension/gemini-git-commit 200 in 240ms (compile: 2ms, render: 237ms)
  GET /extension/gemini-git-commit 200 in 218ms (compile: 3ms, render: 215ms)
  GET /extension/gemini-git-commit 200 in 130ms (compile: 3ms, render: 127ms)
+ GET / 200 in 128ms (compile: 15ms, render: 114ms)
+ ✓ Compiled in 63ms
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'security' },
+  { id: '2', slug: 'code-review' },
+  { id: '3', slug: 'flutter' },
+  { id: '4', slug: 'jules' },
+  { id: '5', slug: 'nanobanana' }
+]
+Found extension: undefined
+Extension not found, calling notFound()
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'security' },
+  { id: '2', slug: 'code-review' },
+  { id: '3', slug: 'flutter' },
+  { id: '4', slug: 'jules' },
+  { id: '5', slug: 'nanobanana' }
+]
+Found extension: undefined
+Extension not found, calling notFound()
+ GET / 200 in 1016ms (compile: 204ms, render: 812ms)
+ GET / 200 in 805ms (compile: 788µs, render: 804ms)
+ GET /extension/gemini-git-commit 200 in 819ms (compile: 82ms, render: 737ms)
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'security' },
+  { id: '2', slug: 'code-review' },
+  { id: '3', slug: 'flutter' },
+  { id: '4', slug: 'jules' },
+  { id: '5', slug: 'nanobanana' }
+]
+Found extension: undefined
+Extension not found, calling notFound()
+Received slug: gemini-git-commit
+Available extensions: [
+  { id: '1', slug: 'security' },
+  { id: '2', slug: 'code-review' },
+  { id: '3', slug: 'flutter' },
+  { id: '4', slug: 'jules' },
+  { id: '5', slug: 'nanobanana' }
+]
+Found extension: undefined
+Extension not found, calling notFound()
+ GET /extension/gemini-git-commit 200 in 911ms (compile: 52ms, render: 859ms)
+ GET /extension/gemini-git-commit 200 in 256ms (compile: 27ms, render: 230ms)
+ GET /extension/gemini-git-commit 200 in 71ms (compile: 21ms, render: 50ms)
+ ✓ Compiled in 180ms
+ ✓ Compiled in 40ms
+ ✓ Compiled in 36ms
